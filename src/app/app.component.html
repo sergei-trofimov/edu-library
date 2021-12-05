@@ -1,0 +1,19 @@
+<div *ngFor="let item of users | async">
+  <p>{{ item.name }}</p>
+</div>
+
+<p class="tw-text-xl">{{ buildTranslationKey('test') | translate }}</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button (click)="switch(languages.RUSSIAN)">ru</button>
+    </div>
+    <div class="col">
+      <button (click)="switch(languages.ENGLISH)">en</button>
+    </div>
+    <div class="col">
+      <button class="btn btn-primary" (click)="switch(languages.UKRAINIAN)">ua</button>
+    </div>
+  </div>
+</div>
