@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
+    "start-dev": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng deploy --base-href=/edu-library/",
     "heroku-postbuild": "ng build"
+  },
+  "engines": {
+    "node": "14.18.0",
+    "npm": "6.14.15"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +29,9 @@
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "bootstrap": "^5.1.3",
+    "express": "^4.17.1",
     "firebase": "^9.6.0",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
