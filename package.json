@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=/edu-library/"
+    "deploy": "ng deploy --base-href=/edu-library/",
+    "heroku-postbuild": "ng build"
   },
   "private": true,
   "dependencies": {
